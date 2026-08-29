@@ -35,11 +35,11 @@ const Header = () => {
 
                 <nav className='hidden lg:block'>
                     <ul className='flex justify-evenly'>
-                        <li className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Home</li>
-                        <li className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Collection</li>
-                        <li className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Deals</li>
-                        <li className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Reviews</li>
-                        <li className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Contact</li>
+                        <a href='#home' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Home</a>
+                        <a href='#about' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>About</a>
+                        <a href='#collections' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Products</a>
+                        <a href='#reviews' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Reviews</a>
+                        <a href='#contact' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Contact</a>
                     </ul>
                 </nav>
 
@@ -73,11 +73,11 @@ const Header = () => {
             {isMenuOpen && (
                 <nav className='lg:hidden py-6 bg-gray-50'>
                     <ul className='flex flex-col text-center justify-evenly px-6'>
-                        <li className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Home</li>
-                        <li className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Collection</li>
-                        <li className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Deals</li>
-                        <li className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Reviews</li>
-                        <li className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Contact</li>
+                        <a onClick={()=>setIsMenuOpen(false)} href='#home' className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Home</a>
+                        <a onClick={()=>setIsMenuOpen(false)} href='#about' className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>About</a>
+                        <a onClick={()=>setIsMenuOpen(false)} href='#products' className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Products</a>
+                        <a onClick={()=>setIsMenuOpen(false)} href='#reviews' className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Reviews</a>
+                        <a onClick={()=>setIsMenuOpen(false)} href='#contact' className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Contact</a>
                     </ul>
                 </nav>
             )}

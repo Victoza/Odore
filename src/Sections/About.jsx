@@ -3,7 +3,7 @@ import about from '../assets/images/about.png'
 import Button from '../Components/Button'
 const About = () => {
   return (
-    <section className='py-6 bg-white'>
+    <section className='py-6 bg-white' id='about'>
         <div className='flex max-w-7xl mx-auto flex-col lg:flex-row justify-center items-center'>
             <div className='w-full hidden lg:block'>
                 <img src={about} alt=""/>

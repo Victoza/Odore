@@ -7,7 +7,7 @@ import img from '../assets/images/removebg.png'
 
 const Hero = () => {
   return (
-    <section className='relative max-w-7xl mx-auto pt-18 bg-[#f7f6f3] overflow-hidden'>
+    <section className='relative max-w-7xl mx-auto pt-18 bg-[#f7f6f3] overflow-hidden' id='home'>
         <div className='px-4 md:px-8 lg:px-16'>
             <div className="absolute -top-20 -left-28 h-75 w-75 rounded-full border border-[#d9b87b]" />
             <div className="absolute -top-20 -left-28 h-67.5 w-67.5 rounded-full border border-[#d9b87b]" />

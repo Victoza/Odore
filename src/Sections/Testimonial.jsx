@@ -37,7 +37,7 @@ const Testimonial = () => {
     }
     const testimonial = testimonials[current]
   return (
-    <section className='py-8 px-6 md:px-8 lg:px-16'>
+    <section className='py-8 px-6 md:px-8 lg:px-16' id='reviews'>
         <div className='relative bg-[#fdf6ed] rounded-2xl max-w-7xl mx-auto py-16 overflow-hidden'>
             <div className='absolute -top-4 -left-4 border-2 border-amber-500 rounded-full size-16'/>
             {/* <div className='absolute -top-8 -left-8 border border-amber-500 rounded-full size-20'/> */}

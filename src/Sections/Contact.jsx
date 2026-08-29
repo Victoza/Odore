@@ -9,7 +9,7 @@ import Button from '../Components/Button'
 
 const Contact = () => {
   return (
-    <section className='py-12'>
+    <section className='py-12' id='contact'>
       <div className='relative overflow-hidden max-w-7xl mx-auto p-6 md:p-12  bg-[#feecd9] flex flex-col lg:flex-row gap-8'>
             <div className='absolute -top-4 -left-4 border-2 border-amber-500 rounded-full size-16'/>
             <div className='absolute -top-8 -left-8 border-8 border-amber-500 rounded-full size-28'/>
