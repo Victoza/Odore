@@ -37,7 +37,7 @@ const Header = () => {
                     <ul className='flex justify-evenly'>
                         <a href='#home' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Home</a>
                         <a href='#about' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>About</a>
-                        <a href='#collections' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Products</a>
+                        <a href='#products' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Products</a>
                         <a href='#reviews' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Reviews</a>
                         <a href='#contact' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Contact</a>
                     </ul>
