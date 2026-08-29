@@ -121,7 +121,8 @@ In future iterations, I would improve the project by adding a complete shopping 
 
 ## Screenshots
 
-![App Screenshot](https://dummyimage.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](<img width="248" height="356" alt="Screenshot 2026-08-28 144924" src="https://github.com/user-attachments/assets/7d7649fc-c3fd-45bd-a4b5-d72576783a20" />) 
+
 
 
 
