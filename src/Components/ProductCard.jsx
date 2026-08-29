@@ -13,8 +13,6 @@ const ProductCard = () => {
               <Button>Shop Now</Button>
               
               <p className='text-xl md:text-2xl flex justify-center items-center'>$250</p>
-                {/* <button className='bg-orange-200 p-4 rounded-lg text-white font-semibold'>Shop Now</button>
-                <button className=' p-4 rounded-lg text-black font-semibold'>$250</button> */}
             </div>
         </div>
     </div>
