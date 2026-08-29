@@ -25,22 +25,22 @@ const Choose = () => {
             <div className='relative p-4 pt-6 bg-transparent rounded-2xl space-y-4'>
               <p className='bg-white inline-block md:text-md lg:text-lg shadow-md p-4 rounded-2xl font-semibold text-xl text-orange-200'>01</p>
               <h3 className='text-2xl'>Artistic Design</h3>
-              <p>Every fragrance is a masterpiece, crafted with precision by world class perfumes</p>
+              <p>Every fragrance is a masterpiece, crafted with precision by world class perfumes.</p>
             </div>
             <div className='relative p-4 bg-transparent rounded-2xl space-y-4'>
               <span className='bg-white inline-block shadow-md p-4 rounded-2xl font-semibold text-xl text-orange-200'>02</span>
-              <h3 className='text-2xl'>Artistic Design</h3>
-              <p>Every fragrance is a masterpiece, crafted with precision by world class perfumes</p>
+              <h3 className='text-2xl'>Organic Ingredients</h3>
+              <p>Sourced from Nature's finest, each note embodies sophistication.</p>
             </div>
             <div className='relative p-4 pt-6 bg-transparent rounded-2xl space-y-4'>
               <p className='bg-white inline-block shadow-md p-4 rounded-2xl font-semibold text-xl text-orange-200'>03</p>
-              <h3 className='text-2xl'>Artistic Design</h3>
-              <p>Every fragrance is a masterpiece, crafted with precision by world class perfumes</p>
+              <h3 className='text-2xl'>Sustainable Elegance</h3>
+              <p>Indulge guilt free with fragrances designed to honour the planet.</p>
             </div>
             <div className='relative p-4 pt-6 bg-transparent rounded-2xl space-y-4'>
               <p className='bg-white inline-block shadow-md p-4 rounded-2xl font-semibold text-xl text-orange-200'>04</p>
-              <h3 className='text-2xl'>Artistic Design</h3>
-              <p>Every fragrance is a masterpiece, crafted with precision by world class perfumes</p>
+              <h3 className='text-2xl'>Exclusive Collections</h3>
+              <p>Discover scents as rare and unique as the moments they inspire.</p>
             </div>
         </div> 
     </section>
