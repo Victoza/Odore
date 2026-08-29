@@ -119,9 +119,6 @@ I solved these challenges by breaking complex sections into smaller components a
 ### Future Improvements
 In future iterations, I would improve the project by adding a complete shopping experience, including product detail pages, cart functionality, search, filtering, and checkout. I would also improve accessibility, optimize images for faster loading, add smoother animations, and connect the frontend to a backend or API for dynamic product data.
 
-## Screenshots
-
-![App Screenshot](<img width="248" height="356" alt="Screenshot 2026-08-28 144924" src="https://github.com/user-attachments/assets/7d7649fc-c3fd-45bd-a4b5-d72576783a20" />) 
 
 
 
