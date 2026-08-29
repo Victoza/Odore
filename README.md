@@ -98,8 +98,6 @@ Or if using pnpm:
 pnpm install
 4. Start the development server
 npm run dev
-Or:
-pnpm dev
 5. Open the application
 After starting the development server, open the local URL provided by Vite, usually:
 http://localhost:5173
