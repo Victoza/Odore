@@ -28,13 +28,6 @@ function App() {
       <Commitment/>
       <Contact/>
       <Footer/>
-      <Nav>
-        <NavLink>Home</NavLink>
-        <NavLink>Home</NavLink>
-        <NavLink>Home</NavLink>
-        <NavLink>Home</NavLink>
-      </Nav>
-        
     </div>
   )
 }
