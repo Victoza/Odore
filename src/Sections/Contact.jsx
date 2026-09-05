@@ -4,12 +4,13 @@ import img from '../assets/images/contact.png'
 import { BiChat, BiPhone, BiTag, BiUser } from 'react-icons/bi'
 import { RiCustomerService2Line } from "react-icons/ri";
 import { FiHeart, FiShield } from "react-icons/fi";
-import { MdEmail } from 'react-icons/md'
+import { MdEmail, MdMail } from 'react-icons/md'
 import Button from '../Components/Button'
+import Input from '../Components/Input';
 
 const Contact = () => {
   return (
-    <section className='py-12' id='contact'>
+    <section className='py-12'>
       <div className='relative overflow-hidden max-w-7xl mx-auto p-6 md:p-12  bg-[#feecd9] flex flex-col lg:flex-row gap-8'>
             <div className='absolute -top-4 -left-4 border-2 border-amber-500 rounded-full size-16'/>
             <div className='absolute -top-8 -left-8 border-8 border-amber-500 rounded-full size-28'/>
@@ -46,38 +47,30 @@ const Contact = () => {
           <img src={img} alt="" className='w-120 mt-auto'/>
         </div>
         {/* Second half  */}
-        <div className='bg-white p-6 lg:px-8 rounded-2xl shadow-lg w-60%'>
+        <div className='bg-white p-6 lg:px-8 rounded-2xl shadow-lg w-60%' id='contact'>
           <h3 className='mb-6 text-2xl font-medium'>Send Us A Message</h3>
           <p className='mb-12 text-xl font-light'>Fill out the form and we'll get back to you as soon as possible.</p>
           <form action="" className='space-y-6'>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
-
-              <div className='relative flex items-center'>
+              <Input placeholder="Enter your Full Name">
                 <BiUser className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"/>
-                <input type="text" placeholder='Full Name' className='w-full rounded-lg border border-gray-200 py-3 pl-11 pr-4 outline-none focus:border-orange-400'/>
-              </div>
-
-              <div className='relative flex items-center'>
-                <MdEmail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"/>
-                <input type="text" placeholder='Full Name' className='w-full rounded-lg border border-gray-200 py-3 pl-11 pr-4 outline-none focus:border-orange-400'/>
-              </div>
+              </Input>
+              <Input placeholder="Enter your Email">
+                <MdMail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"/>
+              </Input>
             </div>
-            <div className='relative flex items-center'>
-                <BiPhone className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"/>
-                <input type="text" placeholder='Phone Number(Optional)'className='w-full rounded-lg border border-gray-200 py-3 pl-11 pr-4 outline-none focus:border-orange-400'/>
-              </div>
-            <div className='relative flex items-center'>
-                <BiTag className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"/>
-                <input type="text" placeholder='Subject' className='w-full rounded-lg border border-gray-200 py-3 pl-11 pr-4 outline-none focus:border-orange-400'/>
-            </div>
-            <div className='relative flex items-center'>
-                <BiChat className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"/>
-                <textarea name="" id="" placeholder='Your Message'className='w-full rounded-lg border border-gray-200 py-3 pl-11 pr-4 outline-none focus:border-orange-400'></textarea>
-            </div>
+            <Input placeholder="Phone Number">
+              <BiPhone className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"/>
+            </Input>
+            <Input placeholder="Subject">
+              <BiTag className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"/>
+            </Input>
+            <Input placeholder="Enter your Message" element="input">
+              <BiChat className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"/>
+            </Input>
             <div className='mt-12'>
               <Button variant='black'>Send Message →</Button>
             </div>
-            
           </form>
         </div>
       </div>

@@ -3,10 +3,13 @@ import { BiCart, BiSearch } from 'react-icons/bi'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RxCross2 } from "react-icons/rx";
 import { GoDotFill } from "react-icons/go";
+import Nav from './Nav';
+import NavLink from './NavLink';
 
-const Header = () => {
+const Header = ({children}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
+    const closeMenu = () => { setIsMenuOpen(false)}
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,21 +30,19 @@ const Header = () => {
             }`}>
                 
                 <h2 className='flex items-center text-xl md:text-2xl lg:text-3xl font-semibold py-1 px-4 bg-white rounded-full'>
-                    Odore Perla
+                    {children}
                     <span className='text-sm text-[#d9a84f]'>
                         <GoDotFill/>
                     </span>
                 </h2>
 
-                <nav className='hidden lg:block'>
-                    <ul className='flex justify-evenly'>
-                        <a href='#home' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Home</a>
-                        <a href='#about' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>About</a>
-                        <a href='#products' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Products</a>
-                        <a href='#reviews' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Reviews</a>
-                        <a href='#contact' className='px-4 text-lg font-semibold hover:text-[#d9a84f] cursor-pointer'>Contact</a>
-                    </ul>
-                </nav>
+                <Nav class1='hidden lg:block' class2='flex justify-evenly'>
+                    <NavLink onClick={closeMenu}>Home</NavLink>
+                    <NavLink onClick={closeMenu}>About</NavLink>
+                    <NavLink onClick={closeMenu}>Products</NavLink>
+                    <NavLink onClick={closeMenu}>Reviews</NavLink>
+                    <NavLink onClick={closeMenu}>Contact</NavLink>
+                </Nav>
 
                 <div className='hidden md:flex items-center bg-amber-300/5 rounded-full px-4 py-2 gap-4'>
                     <div className='flex items-center gap-2'>
@@ -71,15 +72,17 @@ const Header = () => {
             </div>
 
             {isMenuOpen && (
-                <nav className='lg:hidden py-6 bg-gray-50'>
-                    <ul className='flex flex-col text-center justify-evenly px-6'>
-                        <a onClick={()=>setIsMenuOpen(false)} href='#home' className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Home</a>
-                        <a onClick={()=>setIsMenuOpen(false)} href='#about' className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>About</a>
-                        <a onClick={()=>setIsMenuOpen(false)} href='#products' className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Products</a>
-                        <a onClick={()=>setIsMenuOpen(false)} href='#reviews' className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Reviews</a>
-                        <a onClick={()=>setIsMenuOpen(false)} href='#contact' className='px-4 py-2 text-lg font-semibold rounded-full hover:bg-orange-200 hover:text-[#d9a84f] cursor-pointer'>Contact</a>
-                    </ul>
-                </nav>
+                <>
+                  <Nav class1='lg:hidden py-6 bg-gray-50' class2='flex flex-col text-center justify-evenly px-6' >
+                    <NavLink onClick={closeMenu} href='#home' py='py-2'>Home</NavLink>
+                    <NavLink onClick={closeMenu} href='#about' py='py-2'>About</NavLink>
+                    <NavLink onClick={closeMenu} href='#products' py='py-2'>Products</NavLink>
+                    <NavLink onClick={closeMenu} href='#reviews' py='py-2'>Reviews</NavLink>
+                    <NavLink onClick={closeMenu} href='#contact' py='py-2'>Contact</NavLink>
+                </Nav>  
+            
+                
+               </> 
             )}
 
         </section>

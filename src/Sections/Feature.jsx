@@ -26,8 +26,8 @@ const Feature = () => {
         <div className='mx-auto max-w-7xl px-8 md:px-12 lg:px-24 space-y-8'>
             <h2 className='text-2xl md:text-3xl font-semibold'>Featured Collection</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 py-8'>
-              {featured.map((product)=>(
-                <ProductCard key={product.index} product={product}/>
+              {featured.map((product,index)=>(
+                <ProductCard key={index} product={product}/>
               ))}
             </div>
         </div>

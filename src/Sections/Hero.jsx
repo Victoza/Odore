@@ -14,7 +14,7 @@ const Hero = () => {
             <div className="absolute -top-20 -left-28 h-60 w-60 rounded-full border border-[#d9b87b]" />
             <div className="absolute -top-20 -left-28 h-85 w-85 rounded-full border border-[#d9b87b]" />
             <div className="absolute -top-20 -left-28 h-95 w-95 rounded-full border border-[#d9b87b]" />
-            <Header/>
+            <Header>Odore Perla</Header>
             {/* Hero content */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:gap-12 pt- items-start pt-8'>
                 <div className='self-start md:pt-8 lg:pt-16 space-y-4'>

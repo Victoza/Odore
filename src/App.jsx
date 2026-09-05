@@ -12,6 +12,8 @@ import Testimonial from './Sections/Testimonial'
 import Commitment from './Sections/Commitment'
 import Contact from './Sections/Contact'
 import Footer from './Sections/Footer'
+import Nav from './Components/Nav'
+import NavLink from './Components/NavLink'
 
 function App() {
 
@@ -26,6 +28,13 @@ function App() {
       <Commitment/>
       <Contact/>
       <Footer/>
+      <Nav>
+        <NavLink>Home</NavLink>
+        <NavLink>Home</NavLink>
+        <NavLink>Home</NavLink>
+        <NavLink>Home</NavLink>
+      </Nav>
+        
     </div>
   )
 }
