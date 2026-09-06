@@ -14,20 +14,22 @@ import Contact from './Sections/Contact'
 import Footer from './Sections/Footer'
 import Nav from './Components/Nav'
 import NavLink from './Components/NavLink'
+import Header from './Components/Header'
+import Test from './Sections/Test'
+import Demo from './Pages/Demo'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home'
 
 function App() {
 
   return (
     <div>
-      <Hero/>
-      <Slider/>
-      <About/>
-      <Feature/>
-      <Choose/>
-      <Testimonial/>
-      <Commitment/>
-      <Contact/>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/demo' element={<Demo/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
