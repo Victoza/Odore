@@ -7,18 +7,21 @@ const Feature = () => {
   const featured = [
     {
       image:image1,
-      name:"jkf",
-      description:""
+      name:"Elan Noir",
+      description:"",
+      price:"$250"
     },
     {
       image:image2,
-      name:"nemn",
-      description:""
+      name:"Eau de Parfum",
+      description:"",
+      price:"$200"
     },
     {
       image:image3,
-      name:"nemn",
-      description:""
+      name:"Coco Noir",
+      description:"",
+      price:"$180"
     }
   ]
   return (

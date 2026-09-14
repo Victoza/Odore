@@ -21,8 +21,6 @@ const Hero = () => {
                     <h1 className='text-3xl md:text-5xl lg:text-6xl font-bold leading-tight'>A Symphony <br/> of Scent</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perspiciatis neque earum eos, cupiditate quo. Nesciunt, architecto veritatis.</p>
                     <div className='flex gap-4'>
-                        {/* <button className='bg-[#d9a84f] rounded-md p-2'>Shop Now</button>
-                        <button className='bg-black rounded-md p-2 text-white'>View Details</button> */}
                         <Button>Shop Now</Button>
                         <Button variant='black'>View Details</Button>
                     </div>

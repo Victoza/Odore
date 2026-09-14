@@ -10,7 +10,7 @@ const Testimonial = () => {
         image:image1,
         title:"Great Service",
         message:"Noir Elixir is pure magic ...",
-        name:"Sopjia L.",
+        name:"Sophia L.",
         role:"CEO of Angria Company"    
         },
         {
